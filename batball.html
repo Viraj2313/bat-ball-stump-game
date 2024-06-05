@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Document</title>
+    <title>bat ball stump game</title>
 </head>
 <link rel="stylesheet" href="index.css">
 <body>
-    
-    <button onclick="
+    <div class="container">
+
+        <button onclick="
         
         let computerChoice=computerMove();
 
@@ -28,7 +29,7 @@
      Won:${score.win} 
      lost:${score.lost} 
      Tie:${score.lost}`;
-        ">bat</button>
+        "><img src="images/bat.png" alt="bat"></button>
 
     <button onclick="
     
@@ -50,7 +51,7 @@
      Won:${score.win} 
      lost:${score.lost} 
      Tie:${score.lost}`;
-    ">ball</button>
+    "><img src="images/ball.png" alt="ball"></button>
     <button onclick="
         
     computerChoice=computerMove();    
@@ -74,7 +75,10 @@
      Won:${score.win} 
      lost:${score.lost} 
      Tie:${score.lost}`;
-    ">stump</button>
+    "><img src="images/stump.png" alt="stump"></button>
+
+    </div>
+    
     <h3 id="move"></h3>
 
     <div id="clock"></div>

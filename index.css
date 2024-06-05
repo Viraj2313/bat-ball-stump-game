@@ -1,0 +1,20 @@
+.container {
+    display: block;
+
+}
+
+button{
+    width: 190px;
+    height: 190px;
+    border: none;
+    background-color: white;
+    margin: 20px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+
+img {
+    width: 181px;
+    height: 186px;
+}
