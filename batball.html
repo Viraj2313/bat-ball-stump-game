@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="index.css">
+<body>
+    
+    <button onclick="
+        
+        let computerChoice=computerMove();
+
+        console.log(`computer choice is ${ computerChoice}`);
+        let resultMsg;
+        if (computerChoice === 'ball'){
+            resultMsg = 'You Won';
+            score.win++;
+        } else if (computerChoice === 'stump'){
+            resultMsg = 'You Lose';
+            score.lost++;
+        } else if (computerChoice === 'bat'){
+            resultMsg = 'Tie';
+            score.tie++;
+        }
+        document.querySelector('#move').innerText = `Your Choice is stump. 
+     computer choice is ${computerChoice}. 
+     ${resultMsg}. 
+     Won:${score.win} 
+     lost:${score.lost} 
+     Tie:${score.lost}`;
+        ">bat</button>
+
+    <button onclick="
+    
+    computerChoice=computerMove();
+    console.log(`computer choice is ${ computerChoice}`);
+    if (computerChoice === 'ball'){
+        resultMsg = 'Tie';
+        score.tie++;
+    } else if (computerChoice === 'stump'){
+        resultMsg = 'You Won';
+        score.win++;
+    } else if (computerChoice === 'bat'){
+        resultMsg = 'You Lose';
+        score.lost++;
+    }
+    document.querySelector('#move').innerText = `Your Choice is stump. 
+     computer choice is ${computerChoice}. 
+     ${resultMsg}. 
+     Won:${score.win} 
+     lost:${score.lost} 
+     Tie:${score.lost}`;
+    ">ball</button>
+    <button onclick="
+        
+    computerChoice=computerMove();    
+
+    console.log(`computer choice is ${ computerChoice}`);
+
+    if (computerChoice === 'ball'){
+        resultMsg = 'You Lose';
+        score.lost++;
+    } else if (computerChoice === 'stump'){
+        resultMsg = 'Tie';
+        score.tie++;
+    } else if (computerChoice === 'bat'){
+        resultMsg = 'You Win';
+        score.win++;
+    }
+   
+    document.querySelector('#move').innerText = `Your Choice is stump. 
+     computer choice is ${computerChoice}. 
+     ${resultMsg}. 
+     Won:${score.win} 
+     lost:${score.lost} 
+     Tie:${score.lost}`;
+    ">stump</button>
+    <h3 id="move"></h3>
+
+    <div id="clock"></div>
+    
+    <script src="index.js">   
+    </script>
+
+</body>
+</html>
